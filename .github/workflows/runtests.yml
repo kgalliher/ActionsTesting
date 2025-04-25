@@ -12,11 +12,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
-      - name: Install dependencies
+      - name: Test with unittest
         run:
           pip install arcgis
           pip install pyparcels
           pip install html-testRunner
-      - name: Test with unittest
-        run:
           python runner.py
