@@ -13,4 +13,4 @@ jobs:
           pip install arcgis
           pip install pyparcels
           pip install html-testRunner
-          python ./runner.py
+          python runner.py
