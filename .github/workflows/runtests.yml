@@ -13,8 +13,7 @@ jobs:
           conda init powershell
       - name: Test with unittest
         run:
-          conda install unittest
-          conda -c esri arcgis
+          python -m pip install arcgis
           python -m pip install pyparcels
           python -m pip install html-testRunner
           python ./runner.py
