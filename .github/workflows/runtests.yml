@@ -1,0 +1,20 @@
+name: learn-github-actions
+on: push
+jobs:
+  check-bats-version:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run:
+          conda init powershell
+      - name: Test with unittest
+        run:
+          conda install unittest
+          conda -c esri arcgis
+          python -m pip install pyparcels
+          python -m pip install html-testRunner
+          python ./runner.py
