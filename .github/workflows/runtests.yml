@@ -10,7 +10,7 @@ jobs:
           python-version: '3.11'
       - name: Test with unittest
         run:
-          python -m pip install arcgis
-          python -m pip install pyparcels
-          python -m pip install html-testRunner
+          pip install arcgis
+          pip install pyparcels
+          pip install html-testRunner
           python ./runner.py
