@@ -239,7 +239,7 @@ if __name__ == "__main__":
 
     web_server_path = r"\\kgalliher\\c$\inetpub\wwwroot\KGUtils\wwwroot\pyapi_results"
     report = TestReport(web_server_path)
-    temp_dir = create_temp_dir(r"result_out")
+    temp_dir = create_temp_dir(r"C:\temp")
     out_dir = report.out_folder
 
     # Clear out test order file
