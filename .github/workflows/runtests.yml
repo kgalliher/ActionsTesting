@@ -8,9 +8,6 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           python-version: '3.11'
-      - name: Install dependencies
-        run:
-          conda init powershell
       - name: Test with unittest
         run:
           python -m pip install arcgis
