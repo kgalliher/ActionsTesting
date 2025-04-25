@@ -14,8 +14,14 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Install dependencies
         run:
+      - name: Install arcgis
+        run:
           pip install arcgis
+      - name: Install pyparcels
+        run:
           pip install pyparcels
+      - name: Install html-testrunner
+        run:
           pip install html-testRunner
       - name: Test with unittest
         run:
