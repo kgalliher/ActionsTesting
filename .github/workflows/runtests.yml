@@ -2,16 +2,17 @@ name: learn-github-actions
 on: push
 jobs:
   check-bats-version:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           python-version: '3.11'
-      - name: Test with unittest
+      - name: Install dependencies
         run:
           pip install --upgrade pip
-          pip install arcgis==2.4.1
           pip install pyparcels
           pip install html-testRunner
+      - name: Test with unittest
+        run:
           python runner.py
