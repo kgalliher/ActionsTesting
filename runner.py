@@ -237,7 +237,7 @@ if __name__ == "__main__":
     if len(sys.argv) > 2:
         test_class = sys.argv[2]
 
-    web_server_path = r"\\kgalliher\\c$\inetpub\wwwroot\KGUtils\wwwroot\pyapi_results"
+    web_server_path = "\\\kgalliher\\c$\inetpub\wwwroot\KGUtils\wwwroot\pyapi_results"
     report = TestReport(web_server_path)
     temp_dir = create_temp_dir(r"C:\temp")
     out_dir = report.out_folder
