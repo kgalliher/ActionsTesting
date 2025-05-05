@@ -13,6 +13,6 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       - name: Install arcgis
-        run: pip install arcgis==2.4.2
+        run: pip install arcgis==2.4.1
       - name: Run cleanup job
         run: python -m cleanup_published_items.py
