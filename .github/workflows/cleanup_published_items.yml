@@ -15,6 +15,6 @@ jobs:
       - name: Setup arcgis environment
         run: conda install -c https://esri-forge.python.geocloud.com/ -c esri -c esri-build arcgis=2.4.2 --yes --quiet
       - name: Ensure arcgis
-        run: pip install arcgis::2.4.2
+        run: pip install arcgis==2.4.2
       - name: Run cleanup job
         run: python -m cleanup_published_items.py
