@@ -113,6 +113,6 @@ if __name__ == "__main__":
     delete_all_from_recycle_bin(gis_agol, "ntgrtn-tst")
     delete_all_items(
         gis_ent,
-        tags="integration",
+        tags="ntgrtn-tst",
         day_difference=0,
     )
