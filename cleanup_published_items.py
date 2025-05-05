@@ -114,5 +114,5 @@ if __name__ == "__main__":
     delete_all_items(
         gis_ent,
         tags="integration",
-        day_difference=1,
+        day_difference=0,
     )
